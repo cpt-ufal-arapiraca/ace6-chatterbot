@@ -1,0 +1,11 @@
+/* message.component.css */
+.message {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .user-message {
+    background-color: #e2e8f0;
+    align-self: flex-end;
+  }
