@@ -1,4 +1,4 @@
-<!-- app.component.html -->
 <div class="chat-container">
   <app-message *ngFor="let message of messages" [message]="message.text" [isUserMessage]="message.isUser"></app-message>
+  <app-message-input (sendMessage)="sendMessage($event)"></app-message-input>
 </div>

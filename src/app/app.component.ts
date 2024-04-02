@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ChatBot';
   messages: { text: string, isUser: boolean }[] = [];
+
+  sendMessage(message: string) {
+    this.messages.push({text: message, isUser: true });
+    this.messages.push({text: 'Resposta do bot', isUser: false});
+  }
 }
